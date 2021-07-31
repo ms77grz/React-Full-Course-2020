@@ -25,6 +25,11 @@ body {
   margin-top: 0.5rem;
 }
 
+.book h4 {
+  color: red; /* this style won't work because of inline css */
+  letter-spacing: 5px;
+}
+
 @media screen and (min-width: 768px) {
   .booklist {
     grid-template-columns: repeat(3, 1fr);

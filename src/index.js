@@ -33,6 +33,10 @@ const Image = () => (
 
 const Title = () => <h1>How to Catch a Mermaid</h1>;
 
-const Author = () => <h4>Adam Wallace</h4>;
+const Author = () => (
+  <h4 style={{ color: '#617d98', fontSize: '0.75rem', marginTop: '0.25rem' }}>
+    Adam Wallace
+  </h4>
+);
 
 ReactDOM.render(<BookList />, document.getElementById('root'));
