@@ -16,17 +16,25 @@ const books = [
     title: 'Grumpy Monkey',
     author: 'Suzanne Lang',
   },
+  {
+    img: 'https://images-na.ssl-images-amazon.com/images/I/81vTRhCo4sL._AC_UL200_SR200,200_.jpg',
+    title: 'The Invisible String',
+    author: 'Patrice Karst',
+  },
 ];
 
-const names = ['alex', 'blake', 'chris'];
-const newNames = names.map(name => <h1>{name}</h1>);
-
 function BookList() {
-  return <section className='booklist'>{newNames}</section>;
+  return (
+    <section className='booklist'>
+      {books.map(book => (
+        <Book book={book} />
+      ))}
+    </section>
+  );
 }
 
 const Book = props => {
-  const { img, title, author } = props;
+  const { img, title, author } = props.book;
   return (
     <article className='book'>
       <img src={img} alt='' />
