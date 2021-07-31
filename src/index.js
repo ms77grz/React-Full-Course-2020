@@ -4,17 +4,17 @@ import ReactDOM from 'react-dom';
 function Greeting() {
   return (
     <div>
-      <h1>Hello, React!</h1>
+      <Person />
+      <Message />
     </div>
   );
 }
 
-// function Greeting() {
-//   return React.createElement(
-//     'div',
-//     {},
-//     React.createElement('h1', {}, 'Hello, React!')
-//   );
-// }
+// implicit return
+const Person = () => <h2>John Doe</h2>;
 
+// explicit return
+const Message = () => {
+  return <p>This is a message.</p>;
+};
 ReactDOM.render(<Greeting />, document.getElementById('root'));
