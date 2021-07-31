@@ -1,9 +1,9 @@
-import UseStateObject from './components/UseStateObject';
+import UseStateCounter from './components/UseStateCounter';
 
 export default function App() {
   return (
     <div className='container'>
-      <UseStateObject />
+      <UseStateCounter />
     </div>
   );
 }
