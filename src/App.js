@@ -1,9 +1,9 @@
-import Setup from './components/ErrorExample';
+import UseStateBasics from './components/UseStateBasics';
 
 export default function App() {
   return (
     <div className='container'>
-      <Setup />
+      <UseStateBasics />
     </div>
   );
 }
