@@ -1,20 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function Greeting() {
+function BookList() {
   return (
-    <div>
-      <Person />
-      <Message />
-    </div>
+    <section>
+      <Book />
+      <Book />
+      <Book />
+    </section>
   );
 }
 
-// implicit return
-const Person = () => <h2>John Doe</h2>;
-
-// explicit return
-const Message = () => {
-  return <p>This is a message.</p>;
+const Book = () => {
+  return (
+    <article>
+      <Image />
+      <Title />
+      <Author />
+    </article>
+  );
 };
-ReactDOM.render(<Greeting />, document.getElementById('root'));
+
+const Image = () => (
+  <img
+    src='https://images-na.ssl-images-amazon.com/images/I/81Zj4ibm%2BhL._AC_UL200_SR200,200_.jpg'
+    alt=''
+  />
+);
+
+const Title = () => <h1>How to Catch a Mermaid</h1>;
+
+const Author = () => <h4>Adam Wallace</h4>;
+
+ReactDOM.render(<BookList />, document.getElementById('root'));
