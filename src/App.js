@@ -1,9 +1,9 @@
-import UseEffectFetchData from './components/UseEffectFetchData';
+import MultipleReturns from './components/MultipleReturns';
 
 export default function App() {
   return (
     <div className='container'>
-      <UseEffectFetchData />
+      <MultipleReturns />
     </div>
   );
 }
