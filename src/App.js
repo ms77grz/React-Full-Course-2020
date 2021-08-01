@@ -1,11 +1,9 @@
-import UseStateCounter from './components/UseStateCounter';
-import UseStateArray from './components/UseStateArray';
+import UseEffectBasics from './components/UseEffectBasics';
 
 export default function App() {
   return (
     <div className='container'>
-      <UseStateCounter />
-      <UseStateArray />
+      <UseEffectBasics />
     </div>
   );
 }
