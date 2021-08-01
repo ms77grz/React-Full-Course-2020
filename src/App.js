@@ -1,9 +1,9 @@
-import MultipleReturns from './components/MultipleReturns';
+import ShortCircuit from './components/ShortCircuit';
 
 export default function App() {
   return (
     <div className='container'>
-      <MultipleReturns />
+      <ShortCircuit />
     </div>
   );
 }
