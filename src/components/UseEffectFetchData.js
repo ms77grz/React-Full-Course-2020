@@ -25,10 +25,6 @@ export default function UseEffectFetchData() {
     getUsers();
   }, []);
 
-  if (users.length === 0) {
-    return <p>Loading...</p>;
-  }
-
   return (
     <>
       <h3>github users</h3>
