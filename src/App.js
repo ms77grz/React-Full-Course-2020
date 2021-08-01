@@ -1,9 +1,9 @@
-import UseEffectCleanup from './components/UseEffectCleanup';
+import UseEffectFetchData from './components/UseEffectFetchData';
 
 export default function App() {
   return (
     <div className='container'>
-      <UseEffectCleanup />
+      <UseEffectFetchData />
     </div>
   );
 }
